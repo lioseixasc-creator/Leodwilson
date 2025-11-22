@@ -1,0 +1,407 @@
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Inter', sans-serif;
+color: #1a1a1a;
+background: #fff;
+line-height: 1.6;
+}
+
+.container {
+width: 100%;
+max-width: 1300px;
+margin-right: auto;
+}
+
+/* HEADER */
+.header {
+position: absolute;
+top: 0;
+width: 100%;
+padding: 20px 0;
+z-index: 10;
+margin-right: 15%;
+}
+.logo {
+height: 80px;
+
+}
+
+/* HERO */
+.hero {
+position: relative;
+height: 90vh;
+color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: left;
+}
+.hero-bg {
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+filter: brightness(70%);
+z-index: -1;
+}
+.hero-content {
+max-width: 600px;
+padding-left: 60px;
+}
+.hero h1 {
+font-family: 'Inter', sans-serif;
+font-weight: 900;
+font-size: 3.2rem;
+line-height: 1.1;
+text-transform: uppercase;
+}
+.hero h1 span {
+display: block;
+}
+.hero-subtitle {
+font-family: 'Inter', sans-serif;
+font-size: 1.1rem;
+margin-top: 20px;
+margin-bottom: 30px;
+}
+.btn {
+text-decoration: none;
+display: inline-block;
+padding: 12px 24px;
+border-radius: 6px;
+font-weight: 700;
+transition: background 0.3s;
+}
+.btn-primary {
+background: #0ea84f;
+color: #fff;
+}
+.btn-primary:hover {
+background: #0c8c42;
+}
+
+/* O QUE É UPCYCLING */
+.upcycling {
+padding: 80px 80px 80px;
+background: #fff;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+.upcycling-inner {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 40px;
+flex-wrap: wrap;
+}
+.upcycling-img img {
+width: 100%;
+max-width: 500px;
+height: auto;
+border-radius: 10px;
+}
+.upcycling-text {
+flex: 1;
+}
+.upcycling-text h2 {
+color: #0ea84f;
+margin-bottom: 15px;
+}
+
+/* SOBRE O EVENTO */
+.sobre-evento {
+width: 100%;
+position: relative;
+}
+
+/* Wrapper  */
+.sobre-evento-bg-wrapper {
+position: relative;
+width: 100%;
+max-height: 400px; 
+overflow: hidden;
+
+}
+
+.sobre-evento-bg {
+width: 100%;
+height: auto; 
+display: block;
+object-fit: contain; 
+}
+
+.evento-conteudo {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); 
+text-align: justify;
+text-justify: inter-word;
+color: #fff;
+padding: 0 20px;
+}
+
+.evento-conteudo h2,
+.evento-conteudo p {
+color: #fff;
+}
+
+/* FUNDO VERDE DOS ICONS */
+.evento-info-bg {
+background-color: #bde5c7; 
+width: 100vw; 
+margin-left: calc(-50vw + 50%); 
+padding: 40px 0; 
+display: flex;
+justify-content: center;
+}
+
+.evento-info {
+display: flex;
+justify-content: center;
+gap: 40px;
+flex-wrap: wrap;
+}
+
+.evento-card {
+text-align: center;
+width: 180px;
+color: #000;
+}
+
+.evento-card img {
+height: 80px;
+margin-bottom: 10px;
+}
+
+/* FORMULÁRIO */
+
+.inscricao {
+position: relative;
+background: url("assets/FORM.02.png") center/cover no-repeat;
+text-align: center;
+padding: 120px 0;
+margin: 100px; ;
+display: block;
+
+}
+
+.form-content {
+max-width: 600px;
+margin: 0 auto;
+display: flex;
+justify-content: flex-end;
+
+}
+
+
+.form-box {
+display: flex;
+flex-direction: column;
+gap: 10px;
+
+
+padding: 30px;
+border-radius: 10px;
+margin-left: auto;
+
+}
+.form-box input {
+padding: 14px;
+border: none;
+border-radius: 6px;
+font-size: 1rem;
+margin-left: auto;
+
+}
+.btn-secondary {
+background: #13c161;
+color: #fff;
+border: none;
+cursor: pointer;
+padding: 14px;
+font-weight: 700;
+border-radius: 6px;
+margin-left: 0%;
+}
+
+
+
+/* SECÇÃO INSPIRAÇÃO */
+.inspiracao {
+margin-top: 80px;
+}
+.inspiracao-img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+/* FOOTER */
+.footer {
+background: #060709;
+color: #fff;
+padding: 60px 0 40px 60px;
+text-align: left;
+
+}
+.footer-logo {
+height: 100px;
+margin-bottom: 20px;
+}
+.footer p {
+font-size: 15px;
+margin-bottom: 10px;
+}
+.footer-logos {
+width: 90%;
+max-width: 900px;
+display: flex;
+justify-content: center;
+}
+
+
+/* RESPONSIVO */
+@media (max-width: 1000px) {
+
+/* HEADER */
+.header {
+margin-right: 0;
+padding: 15px 20px;
+}
+.logo {
+height: 60px;
+}
+
+/* HERO */
+.hero {
+height: auto;
+padding: 120px 20px 80px;
+text-align: center;
+}
+.hero-content {
+max-width: 100%;
+padding-left: 0;
+text-align: center;
+}
+.hero h1 {
+font-size: 2.2rem;
+}
+.hero-subtitle {
+font-size: 1rem;
+}
+
+/* UPCYCLING */
+.upcycling {
+padding: 40px 20px;
+}
+.upcycling-inner {
+flex-direction: column;
+gap: 20px;
+text-align: center;
+}
+.upcycling-img img {
+width: 100%;
+max-width: 500px;
+margin: 0 auto;
+height: auto;
+}
+
+/* SOBRE O EVENTO */
+.sobre-evento-bg-wrapper {
+max-height: none;
+}
+.sobre-evento-bg {
+width: 100%;
+height: auto;
+object-fit: cover;
+}
+.evento-conteudo {
+position: relative;
+transform: none;
+top: auto;
+left: auto;
+padding: 30px 20px;
+text-align: left;
+}
+
+.evento-info-bg {
+width: 100%;
+margin-left: 0;
+padding: 40px 20px;
+}
+
+.evento-info {
+flex-direction: column;
+align-items: center;
+gap: 30px;
+}
+
+.evento-card {
+width: 100%;
+max-width: 280px;
+text-align: center;
+}
+
+.evento-card img {
+height: 80px !important;
+width: auto !important;
+}
+
+/* FORMULÁRIO */
+.inscricao {
+margin: 40px 0;
+padding: 80px 20px;
+background-position: center center !important;
+background-size: cover !important;
+background-repeat: no-repeat;
+}
+
+.form-content {
+flex-direction: column;
+align-items: center;
+}
+
+
+
+.form-box {
+margin-left: 0 !important;
+width: 100%;
+max-width: 360px;
+padding: 20px;
+}
+
+.form-box input {
+width: 100%;
+margin-left: 0;
+}
+
+.btn-secondary {
+width: 100%;
+}
+
+/* INSPIRAÇÃO */
+.inspiracao {
+margin-top: 40px;
+}
+
+/* FOOTER */
+.footer {
+padding: 40px 20px;
+text-align: center;
+}
+.footer-logo {
+height: 70px;
+}
+.footer-logos {
+width: 100%;
+justify-content: center;
+}
+}
